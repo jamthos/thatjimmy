@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import screenshotPacks from '../images/screenshot-packs.png'
 
 export default function Home() {
   return (
@@ -10,31 +11,41 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="max-w-screen-md mx-auto px-3 min-h-screen flex flex-col justify-between">
-        <header className="py-10">
+      <header className="py-10 bg-gradient-to-tl from-blueGray-900 to-violet-900 mb-3">
+        <div className="max-w-screen-lg mx-auto px-8">
           <h1 className="text-5xl font-black text-white">James Thomas</h1>
-          <p>Front end developer - Digital Marketing</p>
-        </header>
-        <main className="p-10 bg-gray-800 rounded shadow border border-warmGray-700">
-          <h2 className="text-3xl tracking-tight font-bold text-white border-b border-warmGray-700 pb-5">
-            Web Development
+          <p className="italic text-lime-200 text-base">
+            Friendly dude, making stuff in Osaka, Japan.
+          </p>
+          <p className="text-2xl font-bold max-w-prose mt-5">
+            Heyo! I do front end development, and other work too.
+          </p>
+          <p className="text-lg max-w-prose">
+            I&lsquo;ve got a long and storied relationship with{' '}
+            <code>HTML</code>, <code>CSS</code>, and <code>JavaScript</code>,
+            but still I manage to get to know them a little deeper each day.
+          </p>
+          <p className="text-lg max-w-prose">
+            My new buds include <code>React</code>, <code>Gatsby</code>, and{' '}
+            <code>Tailwind CSS</code>, and we are all having a party. I love my
+            friends.
+          </p>
+        </div>
+      </header>
+      <div className="max-w-screen-lg mx-auto px-3 min-h-screen flex flex-col justify-between">
+        <main className="p-5 bg-gray-800 rounded shadow border border-warmGray-700">
+          <h2 className="text-lg tracking-tight text-white border-b border-warmGray-700 pb-5">
+            Web Development Portfolio
           </h2>
           <article className="py-5">
-            <h3 className="font-bold text-2xl text-lime-300">
-              <span role="img" aria-label="gift box">
-                🎁
-              </span>{' '}
-              ZenPop Packs
-            </h3>
-            <p className="text-lg">
+            <h3 className="font-bold text-4xl text-lime-300">ZenPop Packs</h3>
+            <p className="text-xl">
               <a href="https://promo.zenpop.jp">promo.zenpop.jp</a>
             </p>
             <div className="my-3 leading-none">
               <Image
-                src="http://www.fillmurray.com/600/420"
+                src={screenshotPacks}
                 alt="Screenshot"
-                width="600"
-                height="420"
                 className="rounded shadow-lg"
               />
             </div>
