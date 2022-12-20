@@ -1,3 +1,3 @@
 # James
-Based in Osaka
+Based in Osaka  
 Work at Meetsmore.com
